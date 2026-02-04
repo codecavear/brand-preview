@@ -1,15 +1,13 @@
-FROM node:22-alpine AS builder
+FROM node:22-alpine
+
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
 RUN npm run build
 
-FROM nginx:alpine
-COPY --from=builder /app/dist /usr/share/nginx/html
+# Install serve to serve static files
+RUN npm install -g serve
 
-# Create nginx config that uses PORT env var (Railway requirement)
-RUN echo 'server { listen ${PORT:-80}; root /usr/share/nginx/html; index index.html; location / { try_files $uri $uri/ /index.html; } }' > /etc/nginx/templates/default.conf.template
-
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+# Start script that uses PORT env var
+CMD sh -c "serve -s dist -l $PORT"
