@@ -1,33 +1,61 @@
 <script setup>
 const brands = [
-  { id: 'fitter', name: 'Fitter', tagline: 'Tu progreso, medido', color: '#a3e635', icon: '🏋️' },
-  { id: 'vegy', name: 'Vegy', tagline: 'Productos orgánicos a tu puerta', color: '#22c55e', icon: '🌿' },
-  { id: 'habito', name: 'Habito', tagline: 'Gamifica tu productividad', color: '#3b82f6', icon: '✓' },
+  { 
+    id: 'fitter', 
+    name: 'Fitter', 
+    tagline: 'Tu progreso, medido', 
+    color: '#a3e635',
+    bg: '#111827',
+    iconUrl: 'https://api.iconify.design/lucide/dumbbell.svg'
+  },
+  { 
+    id: 'vegy', 
+    name: 'Vegy', 
+    tagline: 'Productos orgánicos a tu puerta', 
+    color: '#22c55e',
+    bg: '#14532d',
+    iconUrl: 'https://api.iconify.design/lucide/leaf.svg'
+  },
+  { 
+    id: 'habito', 
+    name: 'Habito', 
+    tagline: 'Gamifica tu productividad', 
+    color: '#3b82f6',
+    bg: '#0f172a',
+    iconUrl: 'https://api.iconify.design/lucide/check-square.svg'
+  },
 ]
+
+const iconWithColor = (url, color) => `${url}?color=${encodeURIComponent(color)}`
 </script>
 
 <template>
-  <div class="min-h-screen bg-zinc-950 p-8">
+  <div class="min-h-screen bg-zinc-950 p-6 sm:p-8">
     <div class="max-w-4xl mx-auto">
-      <h1 class="text-4xl font-bold text-white mb-2">Brand Preview</h1>
-      <p class="text-zinc-500 mb-12">codeCave brand assets</p>
+      <h1 class="text-3xl sm:text-4xl font-bold text-white mb-2">Brand Preview</h1>
+      <p class="text-zinc-500 mb-8 sm:mb-12">codeCave brand assets</p>
       
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <router-link
           v-for="brand in brands"
           :key="brand.id"
           :to="`/${brand.id}`"
-          class="bg-zinc-900 rounded-2xl p-6 hover:bg-zinc-800 transition border border-zinc-800 group"
+          class="bg-zinc-900 rounded-2xl overflow-hidden hover:bg-zinc-800 transition border border-zinc-800 group"
         >
+          <!-- Logo horizontal preview -->
           <div 
-            class="w-14 h-14 rounded-xl flex items-center justify-center mb-4 text-2xl"
-            :style="{ backgroundColor: brand.color + '20' }"
+            class="h-24 flex items-center gap-4 px-6"
+            :style="{ backgroundColor: brand.bg }"
           >
-            {{ brand.icon }}
+            <img :src="iconWithColor(brand.iconUrl, brand.color)" class="w-10 h-10" />
+            <span class="text-2xl font-bold text-white">{{ brand.name }}</span>
           </div>
-          <h2 class="text-lg font-semibold text-white group-hover:text-zinc-100">{{ brand.name }}</h2>
-          <p class="text-zinc-500 text-sm mt-1">{{ brand.tagline }}</p>
-          <p class="text-zinc-600 text-xs mt-3 group-hover:text-zinc-500">View assets →</p>
+          
+          <!-- Card content -->
+          <div class="p-5">
+            <p class="text-zinc-400 text-sm">{{ brand.tagline }}</p>
+            <p class="text-zinc-600 text-xs mt-3 group-hover:text-zinc-500">View assets →</p>
+          </div>
         </router-link>
       </div>
     </div>
