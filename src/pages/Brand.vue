@@ -35,6 +35,36 @@ const configs = {
     iconUrl: 'https://api.iconify.design/lucide/check-square.svg',
     font: 'Inter',
     colors: { primary: '#3b82f6', bg: '#0f172a', surface: '#1e293b', text: '#ffffff', muted: '#94a3b8' }
+  },
+  reportar: {
+    name: 'Reportar',
+    tagline: 'Tu voz cuenta',
+    headline: ['Denuncia problemas.', 'Mejora tu ciudad.'],
+    domain: 'reportar.ar',
+    icon: '⚠️',
+    iconUrl: 'https://api.iconify.design/lucide/alert-triangle.svg',
+    font: 'Inter',
+    colors: { primary: '#f59e0b', bg: '#111827', surface: '#1f2937', text: '#ffffff', muted: '#9ca3af' }
+  },
+  asistente: {
+    name: 'Asistente',
+    tagline: 'Tu asistente AI 24/7',
+    headline: ['Atención inmediata.', 'Siempre disponible.'],
+    domain: 'asistente.ar',
+    icon: '🤖',
+    iconUrl: 'https://api.iconify.design/lucide/bot.svg',
+    font: 'Inter',
+    colors: { primary: '#8b5cf6', bg: '#0f172a', surface: '#1e293b', text: '#ffffff', muted: '#94a3b8' }
+  },
+  quests: {
+    name: 'Quests',
+    tagline: 'Desafíos que transforman',
+    headline: ['Acepta el desafío.', 'Gana recompensas.'],
+    domain: 'quests.ar',
+    icon: '⚔️',
+    iconUrl: 'https://api.iconify.design/lucide/swords.svg',
+    font: 'Inter',
+    colors: { primary: '#ec4899', bg: '#111827', surface: '#1f2937', text: '#ffffff', muted: '#9ca3af' }
   }
 }
 
