@@ -66,6 +66,16 @@ const configs = {
     font: 'Inter',
     colors: { primary: '#ec4899', bg: '#111827', surface: '#1f2937', text: '#ffffff', muted: '#9ca3af' }
   }
+  turnosmed: {
+    name: 'TurnosMed',
+    tagline: 'Organiza tus citas médicas fácilmente',
+    headline: ['Simplifica la gestión de turnos.', 'Mejora la atención al paciente.'],
+    domain: 'turnosmed.ar',
+    icon: '🩺',
+    iconUrl: 'https://api.iconify.design/lucide/stethoscope.svg',
+    font: 'Inter',
+    colors: { primary: '#4caf50', bg: '#111827', surface: '#1f2937', text: '#ffffff', muted: '#9ca3af' }
+  },
 }
 
 const brand = computed(() => configs[brandId.value] || configs.fitter)
