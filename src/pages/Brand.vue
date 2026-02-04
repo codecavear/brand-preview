@@ -76,6 +76,16 @@ const configs = {
     font: 'Inter',
     colors: { primary: '#4caf50', bg: '#111827', surface: '#1f2937', text: '#ffffff', muted: '#9ca3af' }
   },
+  truco: {
+    name: 'Truco',
+    tagline: 'El contador más simple',
+    headline: ['Sin lápiz.', 'Sin papel.'],
+    domain: 'truco.codecave.ar',
+    icon: '🗡️',
+    iconUrl: 'https://api.iconify.design/game-icons/gladius.svg',
+    font: 'Inter',
+    colors: { primary: '#6cace4', bg: '#1e3a5f', surface: '#2d4a6f', text: '#ffffff', muted: '#94a3b8' }
+  }
 }
 
 const brand = computed(() => configs[brandId.value] || configs.fitter)
