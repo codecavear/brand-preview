@@ -85,6 +85,16 @@ const configs = {
     iconUrl: 'https://api.iconify.design/game-icons/gladius.svg',
     font: 'Inter',
     colors: { primary: '#6cace4', bg: '#1e3a5f', surface: '#2d4a6f', text: '#ffffff', muted: '#94a3b8' }
+  },
+  gamescave: {
+    name: 'gamesCave',
+    tagline: 'Tu cueva de juegos',
+    headline: ['Play.', 'Compete. Fun.'],
+    domain: 'games.codecave.ar',
+    icon: '🎮',
+    iconUrl: 'https://api.iconify.design/lucide/gamepad-2.svg',
+    font: 'Inter',
+    colors: { primary: '#8b5cf6', bg: '#1e1b4b', surface: '#2e2a5b', text: '#ffffff', muted: '#94a3b8' }
   }
 }
 
