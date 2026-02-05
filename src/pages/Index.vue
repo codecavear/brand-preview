@@ -56,14 +56,6 @@ const brands = [
     bg: '#111827',
     iconUrl: 'https://api.iconify.design/lucide/spade.svg'
   },
-  { 
-    id: 'turnosmed', 
-    name: 'TurnosMed', 
-    tagline: 'Gestión de turnos médicos', 
-    color: '#4caf50',
-    bg: '#111827',
-    iconUrl: 'https://api.iconify.design/lucide/stethoscope.svg'
-  },
 ]
 
 const iconWithColor = (url, color) => `${url}?color=${encodeURIComponent(color)}`
