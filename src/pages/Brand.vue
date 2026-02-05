@@ -64,7 +64,7 @@ const configs = {
     icon: '📜',
     iconUrl: 'https://api.iconify.design/lucide/scroll.svg',
     font: 'Inter',
-    colors: { primary: '#eab308', bg: '#111827', surface: '#1f2937', text: '#ffffff', muted: '#9ca3af' }
+    colors: { primary: '#d4a574', bg: '#1a1512', surface: '#2a2320', text: '#ffffff', muted: '#9ca3af' }
   },
   truco: {
     name: 'Truco',

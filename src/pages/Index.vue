@@ -28,8 +28,8 @@ const brands = [
     id: 'quests', 
     name: 'Quests', 
     tagline: 'Organize Epic Game Nights', 
-    color: '#eab308',
-    bg: '#111827',
+    color: '#d4a574',
+    bg: '#1a1512',
     iconUrl: 'https://api.iconify.design/lucide/scroll.svg'
   },
   { 
