@@ -58,13 +58,13 @@ const configs = {
   },
   quests: {
     name: 'Quests',
-    tagline: 'Desafíos que transforman',
-    headline: ['Acepta el desafío.', 'Gana recompensas.'],
+    tagline: 'Organize Epic Game Nights',
+    headline: ['Plan adventures.', 'Play together.'],
     domain: 'quests.ar',
     icon: '⚔️',
     iconUrl: 'https://api.iconify.design/lucide/swords.svg',
     font: 'Inter',
-    colors: { primary: '#ec4899', bg: '#111827', surface: '#1f2937', text: '#ffffff', muted: '#9ca3af' }
+    colors: { primary: '#d4a574', bg: '#111827', surface: '#1f2937', text: '#ffffff', muted: '#9ca3af' }
   },
   turnosmed: {
     name: 'TurnosMed',
