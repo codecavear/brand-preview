@@ -61,8 +61,8 @@ const configs = {
     tagline: 'Organize Epic Game Nights',
     headline: ['Plan adventures.', 'Play together.'],
     domain: 'quests.ar',
-    icon: '⚔️',
-    iconUrl: 'https://api.iconify.design/lucide/swords.svg',
+    icon: '📜',
+    iconUrl: 'https://api.iconify.design/lucide/scroll.svg',
     font: 'Inter',
     colors: { primary: '#d4a574', bg: '#111827', surface: '#1f2937', text: '#ffffff', muted: '#9ca3af' }
   },

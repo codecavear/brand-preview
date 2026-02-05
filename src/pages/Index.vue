@@ -24,6 +24,46 @@ const brands = [
     bg: '#0f172a',
     iconUrl: 'https://api.iconify.design/lucide/check-square.svg'
   },
+  { 
+    id: 'quests', 
+    name: 'Quests', 
+    tagline: 'Organize Epic Game Nights', 
+    color: '#d4a574',
+    bg: '#111827',
+    iconUrl: 'https://api.iconify.design/lucide/scroll.svg'
+  },
+  { 
+    id: 'asistente', 
+    name: 'Asistente', 
+    tagline: 'Tu asistente AI 24/7', 
+    color: '#8b5cf6',
+    bg: '#0f172a',
+    iconUrl: 'https://api.iconify.design/lucide/bot.svg'
+  },
+  { 
+    id: 'reportar', 
+    name: 'Reportar', 
+    tagline: 'Tu voz cuenta', 
+    color: '#f59e0b',
+    bg: '#111827',
+    iconUrl: 'https://api.iconify.design/lucide/alert-triangle.svg'
+  },
+  { 
+    id: 'truco', 
+    name: 'Truco', 
+    tagline: 'Contador de truco argentino', 
+    color: '#ef4444',
+    bg: '#111827',
+    iconUrl: 'https://api.iconify.design/lucide/spade.svg'
+  },
+  { 
+    id: 'turnosmed', 
+    name: 'TurnosMed', 
+    tagline: 'Gestión de turnos médicos', 
+    color: '#4caf50',
+    bg: '#111827',
+    iconUrl: 'https://api.iconify.design/lucide/stethoscope.svg'
+  },
 ]
 
 const iconWithColor = (url, color) => `${url}?color=${encodeURIComponent(color)}`
