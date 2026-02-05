@@ -28,7 +28,7 @@ const brands = [
     id: 'quests', 
     name: 'Quests', 
     tagline: 'Organize Epic Game Nights', 
-    color: '#d4a574',
+    color: '#eab308',
     bg: '#111827',
     iconUrl: 'https://api.iconify.design/lucide/scroll.svg'
   },
@@ -46,7 +46,7 @@ const brands = [
     tagline: 'Tu voz cuenta', 
     color: '#f59e0b',
     bg: '#111827',
-    iconUrl: 'https://api.iconify.design/lucide/alert-triangle.svg'
+    iconUrl: 'https://api.iconify.design/lucide/megaphone.svg'
   },
   { 
     id: 'truco', 

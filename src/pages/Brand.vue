@@ -41,8 +41,8 @@ const configs = {
     tagline: 'Tu voz cuenta',
     headline: ['Denuncia problemas.', 'Mejora tu ciudad.'],
     domain: 'reportar.ar',
-    icon: '⚠️',
-    iconUrl: 'https://api.iconify.design/lucide/alert-triangle.svg',
+    icon: '📢',
+    iconUrl: 'https://api.iconify.design/lucide/megaphone.svg',
     font: 'Inter',
     colors: { primary: '#f59e0b', bg: '#111827', surface: '#1f2937', text: '#ffffff', muted: '#9ca3af' }
   },
@@ -64,7 +64,7 @@ const configs = {
     icon: '📜',
     iconUrl: 'https://api.iconify.design/lucide/scroll.svg',
     font: 'Inter',
-    colors: { primary: '#d4a574', bg: '#111827', surface: '#1f2937', text: '#ffffff', muted: '#9ca3af' }
+    colors: { primary: '#eab308', bg: '#111827', surface: '#1f2937', text: '#ffffff', muted: '#9ca3af' }
   },
   turnosmed: {
     name: 'TurnosMed',
