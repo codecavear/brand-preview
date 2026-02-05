@@ -18,8 +18,8 @@ const configs = {
   },
   vegy: {
     name: 'Vegy',
-    tagline: 'Productos orgánicos a tu puerta',
-    headline: ['Productos orgánicos.', 'A tu puerta.'],
+    tagline: 'Crea tu tienda vegana',
+    headline: ['Tu tienda.', 'Tu comunidad.'],
     domain: 'vegy.ar',
     icon: '🌿',
     iconUrl: 'https://api.iconify.design/lucide/leaf.svg',
